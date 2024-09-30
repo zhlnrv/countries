@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>countries-flags</title>
+</head>
+<body>
+    <header class="header">
+        <h3 class="header__title">Where is the world?</h3>
+        <div class="header__mode theme">
+            <div class="theme__icon">
+                <i class="fa-regular fa-moon theme__moon-empty"></i>
+                <i class="fa-solid fa-moon theme__moon-fill"></i>
+            </div>
+            <span class="theme__info">Light Mode</span>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__search">
+            <div class="main__search-box">
+                <input type="text" class="main__search-input" id="search-input" placeholder="Search for a country...">
+                <i class='fas fa-search main__search-icon'></i>
+                <i class='fa fa-close main__search-close'></i>
+            </div>
+            <div class="main__dropdown">
+                <select name="continents" id="dropdown-select" class="main__dropdown-select">
+                    <option value="" class="main__dropdown-option" selected disabled hidden>Fiter by region</option>
+                    <option value="Africa" class="main__dropdown-option">Africa</option>
+                    <option value="Americas" class="main__dropdown-option">America</option>
+                    <option value="Asia" class="main__dropdown-option">Asia</option>
+                    <option value="Europe" class="main__dropdown-option">Europe</option>
+                    <option value="Oceania" class="main__dropdown-option">Oceania</option>
+                </select>
+                <hr class="main__dropdown-line" width="1" size="30">
+                <i class='fa fa-close main__dropdown-close'></i>
+            </div>
+        </div>
+        <div class="main__cards">
+            
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
